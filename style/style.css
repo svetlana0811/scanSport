@@ -1,0 +1,487 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: UbuntuLight;
+  src: url(../fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: UbuntuBold;
+  src: url(../fonts/Ubuntu-Bold.ttf);
+} 
+@font-face {
+  font-family: UbuntuMedium;
+  src: url(../fonts/Ubuntu-Medium.ttf);
+} 
+@font-face {
+  font-family: UbuntuRegular;
+  src: url(../fonts/Ubuntu-Regular.ttf);
+} 
+body {
+  font-family: UbuntuRegular;
+  overflow-x: hidden;
+ 
+}
+.my-container {
+	width: 1120px;
+	margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header .top-part .my-container {
+  display: flex;
+  align-items: center;
+    justify-content: space-between
+}
+header .top-part {
+      padding: 2px 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+header .top-part .city{
+font-size: 14px;
+line-height: 23px; 
+    margin-right: 76px;
+
+color: #C7C7C7;
+}
+header .top-part .contacts {
+font-size: 16px;
+line-height: 24px; 
+
+display: flex;
+    align-items: center;
+color: #CBCBCB;
+}
+header .top-part .contacts a.telephone{
+font-family: UbuntuBold;
+margin-right: 17px;
+}
+header .top-part .contacts a.mail {
+  margin-right:  7px;
+}
+header .top-part .contacts a.socials{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+header .top-part .user-info{
+    display: flex
+}
+header .top-part .user-info .my-orders{
+    display: flex
+}
+header .top-part .user-info .my-orders a{
+      display: flex;
+    font-size: 14px;
+     align-items: center;
+    line-height: 16px;
+    font-family: Roboto-Medium;
+    margin-right: 10px;
+}
+header .top-part .user-info .my-orders a .count{
+    background: #F7941D;
+    width: 22px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9px;
+}
+header .top-part .user-info .my-orders a span{
+
+}
+header .top-part .user-info .dropdown.goroxxx{
+    width: 150px;
+        position: relative;
+    margin-right: 2px
+}
+header .top-part .user-info .dropdown.goroxxx .clickable-heading{
+padding: 10px 18px;
+cursor: pointer;
+}
+header .top-part .user-info .dropdown.goroxxx .clickable-heading p img{
+  transform: rotate(-180deg);
+}
+header .top-part .user-info .dropdown.goroxxx.open .hidden{
+      display: block;
+    position: absolute;
+    top: calc(100% - 2px) ;
+    background: white;
+    box-shadow: 0px 0 4px rgb(0 0 0 / 5%);
+    font-size: 13px;
+    line-height: 15px;
+        z-index: 1;
+    color: #585858;
+    width: 150px;
+    right: 0;
+}
+header .top-part .user-info .dropdown.goroxxx.open .clickable-heading{
+      background: white;
+    color: black;
+}
+header .top-part .user-info .dropdown.goroxxx.open .clickable-heading p img{
+  transform: rotate(0deg);
+}
+header .top-part .user-info .dropdown.goroxxx .clickable-heading p{
+    font-size: 14px;
+    font-family: Roboto-Medium;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden{
+    display: none;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden .item{
+padding: 0 22px 0 18px;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden .item p.mp{
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #F7941D;
+    padding: 2px 5px;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden .item:not(:first-child) a {
+  border-top: 1px solid #F2F2F2;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden .item a .count {
+  font-size: 13px;
+line-height: 15px;
+  font-family: Roboto-Regular;
+color: #F7941D;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden .item a{
+display: flex;
+    justify-content: space-between;
+    padding: 9px 0 11px 0;
+}
+header .top-part .user-info .dropdown.goroxxx .hidden .item.logout {
+background: #F2F2F2;
+
+}
+header .top-part .add-object{
+    background: #F7941D;
+    border-radius: 0px;
+    padding: 10px 12px;
+    font-family: UbuntuMedium;
+
+}
+header .down-part {
+background: #292929;
+color: white
+
+}
+header .down-part .my-container {
+      display: flex;
+    align-items: center;
+}
+header .down-part .logo{
+margin-right: 46px;
+}
+header .down-part nav{
+
+}
+header .down-part nav ul{
+    display: flex;
+    align-items: center;
+}
+header .down-part nav ul li:not(:last-child):after{
+content: '';
+    background: #1A1A1A;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+header .down-part nav ul li{
+  position: relative;
+    width: 190px;
+    font-size: 15px;
+line-height: 16px;
+    padding: 10px;
+    text-align: center;
+    font-family: UbuntuMedium;
+}
+main .title-and-balance{
+    display: flex;
+}
+main .title-and-balance .personal-page{
+font-size: 14px;
+    line-height: 16px;
+      font-family: UbuntuMedium;
+          border-bottom: 2px solid #F7941D;
+    padding: 7px 0;
+    width: 185px;
+}
+main .title-and-balance .balance{
+ 
+width: calc(100% - 185px);
+    border-bottom: 2px solid #f2f2f2;
+    display: flex;
+    justify-content: flex-end;
+}
+main .title-and-balance .balance .text-and-add{
+  font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    font-family: UbuntuMedium;
+    align-items: center;
+}
+main .title-and-balance .balance .text-and-add span.rub{
+    font-size: 14px;
+}
+main .title-and-balance .balance .text-and-add p span.amount{
+    font-size: 16px;
+    font-family: Roboto-Bold;
+    margin-right: 5px
+}
+main .title-and-balance .balance .text-and-add button.add-to-balance{
+    width: 20px;
+    height: 20px;
+    background: #F7941D;
+    border: none;
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 10px;
+}
+main .partials{
+  display: flex;
+}
+main .partials .left-side-menu{
+  width: 185px;
+      padding-top: 20px;
+}
+main .partials .left-side-menu .item.testimonials{ 
+      margin: 27px 0 19px;
+    padding: 20px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+main .partials .left-side-menu .item{
+  font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    margin: 10px 0;
+}
+main .partials .left-side-menu .item a{
+  display: flex;
+    align-items: center;
+    font-family: 'UbuntuRegular';
+}
+main .partials .left-side-menu .item.active a{
+      font-size: 16px;
+    line-height: 18px;
+    font-family: 'UbuntuMedium';
+}
+main .partials .left-side-menu .item .custom-check{
+  border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px
+}
+main .partials .left-side-menu .item.active .custom-check{
+  border: 2px solid #F7941D;
+}
+main .partials .item span.count:before{
+content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: -13px;
+    background: #F7941D;
+    top: 8px;
+}
+main .partials .item span.count{
+  margin-left: 23px;
+    position: relative;
+    color: #F7941D;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto';
+}
+main .partials .item div.mp{
+   padding: 4px 7px;
+    background: #F7941D;
+    color: white;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: 'UbuntuMedium';
+    margin-left: 15px;
+}
+main .partials .item div.mp .text{
+      font-size: 14px;
+    line-height: 16px;
+    margin-right: 5px;
+    font-family: 'UbuntuBold';
+}
+main .partials .item div.mp .days{
+  
+}
+main .partials .cards-content{
+  position: relative;
+  width: calc(100% - 185px);
+     padding: 20px 18px 0 33px;
+}
+main .partials .cards-content .background{
+      width: 2800px;
+    height: 100vh;
+    background: #FCFCFC;
+    position: absolute;
+   
+        top: -40px;
+    left: 0;
+    z-index: -1;
+    left: 0;
+}
+main .partials .cards-content .cards-header{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+}
+main .partials .cards-content .cards-header h1{
+      font-size: 24px;
+    line-height: 28px;
+    font-family: 'UbuntuMedium';
+    font-weight: 100;
+}
+main .partials .cards-content .cards-header button{
+      font-size: 16px;
+    line-height: 19px;
+    color: #41AD49;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+main .partials .cards-content .card-items{
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 27px
+
+}
+main .partials .cards-content .card-items .item:not(:last-child){
+ border-bottom: 1px solid #F2F2F2;
+}
+main .partials .cards-content .card-items .item{
+  padding: 16px 33px 16px 19px;
+    background: white;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .partials .cards-content .card-items .item .image-and-number{
+  display: flex;
+  align-items: center;
+}
+main .partials .cards-content .card-items .item .image-and-number .image{
+      width: 48px;
+    height: 32px;
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17px
+}
+main .partials .cards-content .card-items .item .image-and-number .image img{
+  
+}
+main .partials .cards-content .card-items .item .image-and-number .number{
+      font-size: 16px;
+    line-height: 18px;
+    font-family: 'UbuntuRegular';
+}
+main .partials .cards-content .history-and-delete{
+    display: flex;
+    align-items: center;
+}
+main .partials .cards-content .history-and-delete .history{
+      font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+    margin-right: 35px;
+}
+main .partials .cards-content .history-and-delete .delete{
+      background: transparent;
+    border: none;
+    cursor: pointer;
+}
+main .partials .balance-in-bottom{
+  
+}
+main .partials .balance-in-bottom .title{
+  font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+main .partials .balance-in-bottom .amount-and-add{
+  display: flex;
+    justify-content: space-between;
+    width: 280px;
+    align-items: center;
+    background: white;
+    padding: 14px 15px;
+    padding-left: 17px;
+    box-shadow: 0px 4px 14px rgb(0 0 0 / 5%);
+}
+main .partials .balance-in-bottom .amount-and-add .amount{
+      font-size: 24px;
+    line-height: 28px;
+    font-family: 'UbuntuMedium';
+}
+main .partials .balance-in-bottom .amount-and-add button.add{
+      background: transparent;
+    padding: 10px 14px;
+    border: 1px solid #F7941D;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'UbuntuRegular';
+    color: #757575;
+    cursor: pointer;
+}
+main span.rub{
+  font-family: 'Roboto';
+    font-size: 20px;
+}
+main span.plus{
+  font-size: 18px;
+    line-height: 0;
+    font-family: 'UbuntuMedium'
+}
+main {
+  
+}
+main {
+  
+}
+main {
+  
+}
